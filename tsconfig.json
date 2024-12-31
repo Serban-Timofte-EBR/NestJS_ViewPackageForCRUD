@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "CommonJS",
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "strict": true,
-    "esModuleInterop": true
-  },
-  "include": ["src/**/*"]
+    "module": "ESNext",          // Use ES Modules
+    "moduleResolution": "Node", // Resolve imports like Node.js does
+    "target": "ES6",            // Use modern JavaScript features
+    "outDir": "./dist",         // Output folder
+    "rootDir": "./src",         // Input folder
+    "esModuleInterop": true,    // Allow interoperability between CommonJS and ESM
+    "strict": true              // Enable strict mode
+  }
 }
