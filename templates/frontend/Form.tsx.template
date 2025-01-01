@@ -1,0 +1,30 @@
+/**
+ * GENERATED FILE
+ * Copy this component into your React project.
+ */
+
+import React, { useState } from 'react';
+
+const __Model__Form: React.FC = () => {
+  const [formData, setFormData] = useState<any>({});
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Submit data via API
+    console.log(formData);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      {/* Replace with dynamic inputs */}
+      <input type="text" name="name" onChange={handleChange} placeholder="Name" />
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
+export default __Model__Form;

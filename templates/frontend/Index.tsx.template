@@ -1,0 +1,20 @@
+/**
+ * GENERATED FILE
+ * Copy this file into your React project to link Table and Form components.
+ */
+
+import React from 'react';
+import __Model__Table from './Table';
+import __Model__Form from './Form';
+
+const __Model__Page: React.FC = () => {
+  return (
+    <div>
+      <h1>__Model__ Management</h1>
+      <__Model__Table />
+      <__Model__Form />
+    </div>
+  );
+};
+
+export default __Model__Page;

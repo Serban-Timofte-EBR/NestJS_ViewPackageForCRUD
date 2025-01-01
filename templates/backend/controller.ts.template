@@ -1,0 +1,33 @@
+import { Controller, Get, Post, Put, Delete, Param, Body } from '@nestjs/common';
+import { __Resource__Service } from './__RESOURCE__.service';
+import { Create__Resource__Dto, Update__Resource__Dto } from './dto';
+
+@Controller('__RESOURCE__')
+export class __Resource__Controller {
+  constructor(private readonly service: __Resource__Service) {}
+
+  @Get()
+  findAll() {
+    return this.service.findAll();
+  }
+
+  @Get(':id')
+  findOne(@Param('id') id: string) {
+    return this.service.findOne(id);
+  }
+
+  @Post()
+  create(@Body() dto: Create__Resource__Dto) {
+    return this.service.create(dto);
+  }
+
+  @Put(':id')
+  update(@Param('id') id: string, @Body() dto: Update__Resource__Dto) {
+    return this.service.update(id, dto);
+  }
+
+  @Delete(':id')
+  delete(@Param('id') id: string) {
+    return this.service.delete(id);
+  }
+}

@@ -1,0 +1,7 @@
+export class Create__Resource__Dto {
+    // Add fields here
+  }
+  
+  export class Update__Resource__Dto {
+    // Add fields here
+  }

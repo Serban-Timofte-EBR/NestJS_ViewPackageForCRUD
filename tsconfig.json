@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "module": "ESNext",          // Use ES Modules
-    "moduleResolution": "Node", // Resolve imports like Node.js does
-    "target": "ES6",            // Use modern JavaScript features
-    "outDir": "./dist",         // Output folder
-    "rootDir": "./src",         // Input folder
-    "esModuleInterop": true,    // Allow interoperability between CommonJS and ESM
-    "strict": true              // Enable strict mode
-  }
+    "module": "ESNext",                 
+    "moduleResolution": "Node",        
+    "target": "ES6",                   
+    "rootDir": "./src",                
+    "outDir": "./dist",                
+    "esModuleInterop": true,           
+    "strict": true                    
+  },
+  "include": ["src/**/*"],             
+  "exclude": ["node_modules", "dist"]  
 }

@@ -1,0 +1,41 @@
+/**
+ * GENERATED FILE
+ * Copy this component into your React project.
+ */
+
+import React from 'react';
+
+const __Model__Table: React.FC = () => {
+  const [data, setData] = React.useState<any[]>([]);
+
+  React.useEffect(() => {
+    fetch('/api/__MODEL__')
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
+
+  return (
+    <table>
+      <thead>
+        <tr>
+          {/* Replace these with dynamic column headers */}
+          {Object.keys(data[0] || {}).map((key) => (
+            <th key={key}>{key}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((item, index) => (
+          <tr key={index}>
+            {/* Replace these with dynamic row data */}
+            {Object.values(item).map((value, i) => (
+              <td key={i}>{value}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
+
+export default __Model__Table;
